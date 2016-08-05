@@ -13,7 +13,7 @@
 @interface NSObject (VDKVO)
 
 #pragma mark Public Method
-- (VDKVOElement *)vd_observeKVOWithKeyPath:(NSString *)keyPath action:(void(^)(VDKVOElement *element, VDKVOChange *change))action;
+- (VDKVOElement *)vd_kvoWithTarget:(id)target keyPath:(NSString *)keyPath action:(void(^)(VDKVOElement *element, VDKVOChange *change))action;
 
 #pragma mark Properties
 - (NSMutableArray *)vd_kvoElementArray;
