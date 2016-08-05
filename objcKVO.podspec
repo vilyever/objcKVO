@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 # }
 
   s.public_header_files = 'objcKVO/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'MapKit', 'objcKeyPath', 'objcBlock', 'objcHook'
 
   s.dependency 'objcKeyPath'
   s.dependency 'objcBlock'
