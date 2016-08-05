@@ -1,0 +1,3 @@
+github "vilyever/objcKeyPath" "master"
+github "vilyever/objcBlock" "master"
+github "vilyever/objcHook" "master"
