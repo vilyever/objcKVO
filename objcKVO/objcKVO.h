@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char objcKVOVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <objcKVO/PublicHeader.h>
 
-
+#import <objcKVO/VDKVOElement.h>
+#import <objcKVO/NSObject+VDKVO.h>
