@@ -9,28 +9,28 @@
 
 Pod::Spec.new do |s|
   s.name             = "objcKVO"
-  s.version          = "1.0.0"
-  s.summary          = "sth useful."
+  s.version          = "1.0.1"
+  s.summary          = "objcKVO"
   s.description      = <<-DESC
-                       wait for next time.
+                       objcKVO
                        DESC
   s.homepage         = "https://github.com/vilyever"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+# s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "vilyever" => "vilyever@gmail.com" }
   s.source           = { :git => "https://github.com/vilyever/objcKVO.git", :branch => 'master' }
-  # s.social_media_url = 'https://twitter.com/vilyever'
+# s.social_media_url = 'https://twitter.com/vilyever'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'objcKVO/**/*.{h,m}'
-#s.resource_bundles = {
+# s.resource_bundles = {
 #   'objcKVO' => ['objcKVO/**/*.png']
 # }
 
   s.public_header_files = 'objcKVO/**/*.h'
-  s.frameworks = 'UIKit', 'MapKit', 'objcKeyPath', 'objcBlock', 'objcHook'
+# s.frameworks = 'UIKit', 'MapKit'
 
   s.dependency 'objcKeyPath'
   s.dependency 'objcBlock'

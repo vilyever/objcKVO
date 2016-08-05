@@ -7,9 +7,9 @@
 //
 
 #import "VDKVOElement.h"
-@import objcKeyPath;
-@import objcBlock;
-@import objcHook;
+#import <objcKeyPath/objcKeyPath.h>
+#import <objcBlock/objcBlock.h>
+#import <objcHook/objcHook.h>
 
 
 @interface VDKVOElement ()
