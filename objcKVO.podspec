@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "objcKVO"
-  s.version          = "1.0.1"
+  s.version          = "1.0.2"
   s.summary          = "objcKVO"
   s.description      = <<-DESC
                        objcKVO
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "vilyever" => "vilyever@gmail.com" }
-  s.source           = { :git => "https://github.com/vilyever/objcKVO.git", :branch => 'master' }
+  s.source           = { :git => "https://github.com/vilyever/objcKVO.git", :tag => s.version.to_s }
 # s.social_media_url = 'https://twitter.com/vilyever'
 
   s.platform     = :ios, '7.0'
