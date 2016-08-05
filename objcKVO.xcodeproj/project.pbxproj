@@ -19,6 +19,8 @@
 		FE6403001D54288E00652BAC /* objcHook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6402FE1D54288E00652BAC /* objcHook.framework */; };
 		FE6403011D54288E00652BAC /* objcKeyPath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6402FF1D54288E00652BAC /* objcKeyPath.framework */; };
 		FE64032B1D542CD200652BAC /* objcBlock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE64032A1D542CD200652BAC /* objcBlock.framework */; };
+		FE64035F1D5445BA00652BAC /* VDKVOChange.h in Headers */ = {isa = PBXBuildFile; fileRef = FE64035D1D5445BA00652BAC /* VDKVOChange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6403601D5445BA00652BAC /* VDKVOChange.m in Sources */ = {isa = PBXBuildFile; fileRef = FE64035E1D5445BA00652BAC /* VDKVOChange.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		FE6402FE1D54288E00652BAC /* objcHook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = objcHook.framework; path = Carthage/Build/iOS/objcHook.framework; sourceTree = "<group>"; };
 		FE6402FF1D54288E00652BAC /* objcKeyPath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = objcKeyPath.framework; path = Carthage/Build/iOS/objcKeyPath.framework; sourceTree = "<group>"; };
 		FE64032A1D542CD200652BAC /* objcBlock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = objcBlock.framework; path = Carthage/Build/iOS/objcBlock.framework; sourceTree = "<group>"; };
+		FE64035D1D5445BA00652BAC /* VDKVOChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDKVOChange.h; sourceTree = "<group>"; };
+		FE64035E1D5445BA00652BAC /* VDKVOChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDKVOChange.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				FE6402D11D54268600652BAC /* VDKVOElement.m */,
 				FE6402B11D54262200652BAC /* objcKVO.h */,
 				FE6402B31D54262200652BAC /* Info.plist */,
+				FE64035D1D5445BA00652BAC /* VDKVOChange.h */,
+				FE64035E1D5445BA00652BAC /* VDKVOChange.m */,
 			);
 			path = objcKVO;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE6402B21D54262200652BAC /* objcKVO.h in Headers */,
+				FE64035F1D5445BA00652BAC /* VDKVOChange.h in Headers */,
 				FE6402D21D54268600652BAC /* NSObject+VDKVO.h in Headers */,
 				FE6402D41D54268600652BAC /* VDKVOElement.h in Headers */,
 			);
@@ -232,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE6402D51D54268600652BAC /* VDKVOElement.m in Sources */,
+				FE6403601D5445BA00652BAC /* VDKVOChange.m in Sources */,
 				FE6402D31D54268600652BAC /* NSObject+VDKVO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +432,7 @@
 				FE6402C41D54262200652BAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE6402C51D54262200652BAC /* Build configuration list for PBXNativeTarget "objcKVOTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +441,7 @@
 				FE6402C71D54262200652BAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -23,11 +23,12 @@
 @implementation VDKVOElement
 
 #pragma mark Public Method
-- (instancetype)initWithTarget:(id)target keyPath:(NSString *)keyPath kvoBlock:(void(^)(VDKVOElement *element, NSDictionary *change))kvoBlock {
+- (instancetype)initWithTarget:(id)target keyPath:(NSString *)keyPath action:(void(^)(VDKVOElement *element, VDKVOChange *change))action {
     self = [super init];
+    
     _target = target;
     _keyPath = [keyPath copy];
-    _kvoBlock = kvoBlock;
+    _kvoAction = action;
     
     [_target addObserver:self forKeyPath:keyPath options:(NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial) context:NULL];
     VDWeakifySelf;
@@ -64,8 +65,8 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if (object == self.target
         && [keyPath isEqualToString:self.keyPath]
-        && self.kvoBlock) {
-        self.kvoBlock(self, change);
+        && self.kvoAction) {
+        self.kvoAction(self, [VDKVOChange changeWithDictionary:change]);
     }
 }
 

@@ -14,8 +14,8 @@
 @implementation NSObject (VDKVO)
 
 #pragma mark Public Method
-- (VDKVOElement *)vd_kvoWithTarget:(id)target keyPath:(NSString *)keyPath action:(void (^)(VDKVOElement *element, NSDictionary *change))kvoBlock {
-    VDKVOElement *element = [[VDKVOElement alloc] initWithTarget:target keyPath:keyPath kvoBlock:kvoBlock];
+- (VDKVOElement *)vd_kvoWithTarget:(id)target keyPath:(NSString *)keyPath action:(void (^)(VDKVOElement *element, VDKVOChange *change))action {
+    VDKVOElement *element = [[VDKVOElement alloc] initWithTarget:target keyPath:keyPath action:action];
     
     [self.vd_kvoElementArray addObject:element];
     

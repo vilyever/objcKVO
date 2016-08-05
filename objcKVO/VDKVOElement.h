@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+#import "VDKVOChange.h"
 
 @class VDKVOElement;
 
@@ -15,13 +16,13 @@
 @interface VDKVOElement : NSObject
 
 #pragma mark Public Method
-- (instancetype)initWithTarget:(id)target keyPath:(NSString *)keyPath kvoBlock:(void(^)(VDKVOElement *element, NSDictionary *change))kvoBlock;
+- (instancetype)initWithTarget:(id)target keyPath:(NSString *)keyPath action:(void(^)(VDKVOElement *element, VDKVOChange *change))action;
 - (void)dispose;
 
 #pragma mark Properties
 @property (nonatomic, weak) id target;
 @property (nonatomic, copy) NSString *keyPath;
-@property (nonatomic, strong) void(^kvoBlock)(VDKVOElement *element, NSDictionary *change);
+@property (nonatomic, strong) void(^kvoAction)(VDKVOElement *element, VDKVOChange *change);
 
 @property (nonatomic, assign, readonly) BOOL isDisposed;
 
