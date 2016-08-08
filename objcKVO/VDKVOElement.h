@@ -27,7 +27,6 @@
 @property (nonatomic, assign, readonly) BOOL isDisposed;
 
 #pragma mark Private Method
-- (void)internalInitVDKVOElement;
 
 
 @end

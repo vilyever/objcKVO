@@ -52,9 +52,7 @@
 #pragma mark Overrides
 - (instancetype)init {
     self = [super init];
-    
-    [self internalInitVDKVOElement];
-    
+        
     return self;
 }
 
@@ -74,8 +72,5 @@
 
 
 #pragma mark Private Method
-- (void)internalInitVDKVOElement {
-    
-}
 
 @end
