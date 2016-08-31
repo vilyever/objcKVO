@@ -1,3 +1,3 @@
-github "vilyever/objcKeyPath" "master"
-github "vilyever/objcBlock" "master"
-github "vilyever/objcHook" "master"
+github "vilyever/objcKeyPath" == 1.1.0
+github "vilyever/objcBlock" == 1.1.0
+github "vilyever/objcHook" == 1.1.0
